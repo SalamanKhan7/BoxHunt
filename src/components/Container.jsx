@@ -1,6 +1,6 @@
 import "./Container.css";
 const Container = (prop) => {
-  const { run } = prop;
+  const { run, handleDiv } = prop;
   console.log(run);
 
   return (
@@ -12,6 +12,7 @@ const Container = (prop) => {
           top: `${run}px`,
           left: `${run}px`,
         }}
+        onClick={handleDiv}
       ></div>
     </div>
   );
