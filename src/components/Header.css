@@ -1,7 +1,7 @@
 .Header {
   width: 100%;
   height: 60px;
-  border-bottom: 5px solid black;
+  border-bottom: 3px solid black;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -10,4 +10,17 @@ button {
   padding: 5px;
   background-color: transparent;
   font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 70px;
+  background-color: rgba(88, 84, 84, 0.1);
+}
+.inp {
+  font-size: 20px;
+  padding: 5px;
+  width: 80px;
+  border: 2px solid black;
+  outline: none;
+  border-radius: 5px;
+  background-color: rgba(88, 84, 84, 0.1);
 }

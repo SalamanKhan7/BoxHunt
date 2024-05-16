@@ -7,16 +7,24 @@ const Body = () => {
   const [run, setRun] = useState(null);
   const [number, setNumber] = useState([]);
   const [count, setCount] = useState(1);
+  const [reaction, setReaction] = useState(Math.floor(Math.random() * 10));
   const changePosition = () => {
-    return Math.floor(Math.random() * 500);
+    return Math.floor(Math.random() * 350);
   };
 
   const handleDiv = () => {
     console.log("div called");
     setRun(changePosition());
     setCount((count) => count + 1);
-    console.log(count);
-    setNumber((number) => [...number, count]);
+    setReaction(Math.floor(Math.random() * 10));
+
+    const obj = {
+      no: count,
+      re: reaction,
+    };
+    console.log(obj);
+    setNumber((number) => [...number, obj]);
+    console.log(number);
   };
   return (
     <div className="Container">
@@ -28,7 +36,7 @@ const Body = () => {
         setCount={setCount}
       />
       <Container run={run} handleDiv={handleDiv} />
-      <Table number={number} />
+      <Table number={number} reaction={reaction} />
     </div>
   );
 };

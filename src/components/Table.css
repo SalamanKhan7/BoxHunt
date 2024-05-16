@@ -3,3 +3,12 @@
   display: flex;
   justify-content: center;
 }
+.mainH {
+  padding: 10px 35px;
+  background-color: rgba(88, 84, 84, 0.1);
+}
+td {
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(88, 84, 84, 0.1);
+}

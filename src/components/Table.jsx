@@ -7,15 +7,15 @@ const Table = (prop) => {
       <table border={"1"}>
         <thead>
           <tr>
-            <th>Mouse clicked Number</th>
-            <th>Reaction time</th>
+            <th className="mainH">Mouse clicked Number</th>
+            <th className="mainH">Reaction time</th>
           </tr>
         </thead>
         <tbody>
-          {number.map((no, i) => (
+          {number.map((num, i) => (
             <tr key={i}>
-              <td>{no}</td>
-              <td>.1s</td>
+              <td>{num.no}</td>
+              <td>.{num.re} s</td>
             </tr>
           ))}
         </tbody>

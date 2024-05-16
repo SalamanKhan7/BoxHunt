@@ -39,6 +39,7 @@ const Header = (prop) => {
       <button onClick={handleReset}>Reset</button>
       <input
         type="number"
+        className="inp"
         name="Number"
         value={countN}
         ref={inputRef}
